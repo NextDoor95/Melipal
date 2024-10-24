@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "myStory": "Historia",
+        "fragments": "Fragmentos",
+        "notes": "Notas",
+        "videos": "Videos",
+        "language": "Idioma"
+    },
+    "hero": {
+        "heroTitle": "Guerra de Malvinas Pradera del ganso",
+        "heroDescription": "Memorias del Veterano Guillermo Huircapan",
+        "heroText": "A mis 19 años participé en la Operación Rosario, cuyo objetivo fue la recuperación de las Islas Malvinas el 2 de abril de 1982. A mis 19 años participé en la Operación Rosario, cuyo objetivo fue la recuperación de las Islas Malvinas el 2 de abril de 1982.",
+        "CallToAction": "Obtenga su Libro"
+    }
+}

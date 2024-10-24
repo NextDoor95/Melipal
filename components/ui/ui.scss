@@ -1,0 +1,55 @@
+@import '../ui/History/History.scss';
+
+.translation {
+    background-color: none !important;
+    width: 140px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px 10px;
+    margin-left: 200px;
+    outline: none;
+    position: relative;
+}
+
+.malvinas-video {
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2d3748;
+    }
+
+    .video-wrapper {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    }
+    .video-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .video-source {
+        margin-top: 1rem;
+        text-align: center;
+        color: #718096;
+        font-size: 0.875rem;
+    }
+}

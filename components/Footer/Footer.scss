@@ -1,0 +1,111 @@
+// Variables para colores
+$bg-color: #1a202c;   // Equivalente a bg-gray-900
+$text-color: #d1d5db; // Equivalente a text-gray-300
+$hover-text-color: white;
+$link-color: #9ca3af; // Equivalente a text-gray-400
+$hover-bg-color: #2d3748; // Equivalente a bg-gray-800
+
+.footer {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 3rem 1rem;
+
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .company-info {
+      h3 {
+        font-size: 1.125rem;
+        color: $hover-text-color;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        margin: 0;
+      }
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      a {
+        font-size: 0.875rem;
+        color: $text-color;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $hover-text-color;
+        }
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      a {
+        color: $link-color;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $hover-text-color;
+        }
+
+        .icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: $hover-bg-color;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    p {
+      font-size: 0.875rem;
+      margin: 0;
+    }
+
+    .sitemap {
+      font-size: 0.875rem;
+      margin-top: 1rem;
+
+      @media (min-width: 640px) {
+        margin-top: 0;
+      }
+
+      a {
+        color: $text-color;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $hover-text-color;
+        }
+      }
+    }
+  }
+}
