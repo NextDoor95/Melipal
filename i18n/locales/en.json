@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "myStory": "History",
+        "fragments": "Fragments",
+        "notes": "Notes",
+        "videos": "Videos",
+        "language": "Language"
+    },
+    "hero": {
+        "heroTitle": "Malvinas War Goose Green",
+        "heroDescription": "Memories of Veteran Guillermo Huircapan",
+        "heroText": "At 19 years old, I participated in Operation Rosario, whose objective was the recovery of the Falkland Islands on April 2, 1982. At 19 years old, I participated in Operation Rosario, whose objective was the recovery of the Falkland Islands on April 2, 1982.",
+        "CallToAction": "grab your copy"
+    }
+}

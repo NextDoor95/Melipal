@@ -1,0 +1,47 @@
+.about {
+  height: 100vh;
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 25%),
+    url('../../public/Hero-background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  
+
+  .wrap {
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex; // Agrega flexbox para que puedas alinear el contenido correctamente
+    align-items: flex-end;
+    justify-content: flex-end; // Alinea el contenido hacia la derecha
+    
+    .content {
+      max-width: 600px;
+      background-color: rgba(0, 0, 0, 0.6); // Fondo semitransparente
+      padding: 2rem;
+      border-radius: 8px;
+      color: #fff;
+      text-align: right;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .CTA {
+        margin-top: 30px !important;
+        background-color: #F0B84E;
+        padding: 10px 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.navbar {
+	position: fixed;
+    height: 70px;
+	width: 100vw;
+	padding: 0 3rem;
+	right: 0;
+    top: 0;
+	display: flex;
+	justify-content: center;
+	z-index: 20;
+	border-bottom: 2px solid rgb(222, 17, 17);
+	backdrop-filter: blur(32px);
+	@media only screen and (min-width: 320px) and (max-width: 767px) {
+		padding: 0 10px;
+		justify-content: space-around;
+	}
+
+	.navList {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		min-width: 550px;
+		max-width: 650px;
+		align-items: center;
+		padding: 0 3rem;
+		.navItem {
+			position: relative;
+		}
+
+		.corner {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	
+}
+
+.navButton {
+	background: none;
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	cursor: pointer;
+	padding: 10px 20px;
+	outline: none;
+	position: relative;
+	transition: color 0.3s ease;
+	&:hover {
+	  color: #F0B84E; // Color en hover
+	}
+}
+
+
+
+.underline {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background-color: #F0B84E;  // Color de la barra
+	clip-path: polygon(
+		0% 50%,    /* Punta izquierda */
+		5% 0%,     /* Ángulo superior izquierdo */
+		95% 0%,    /* Ángulo superior derecho */
+		100% 50%,  /* Punta derecha */
+		95% 100%,  /* Ángulo inferior derecho */
+		5% 100%    /* Ángulo inferior izquierdo */
+	);
+}
