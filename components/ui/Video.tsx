@@ -5,7 +5,7 @@ export default function Video() {
         <section className="malvinas-video">
             <div className="container">
                 <h2 className="title">
-                La Guerra de Malvinas: Un Capítulo en la Historia Argentina
+                Malvinas: Un Capítulo en la Historia Argentina
                 </h2>
                 <div className="video-wrapper">
                 <div className="video-container">
