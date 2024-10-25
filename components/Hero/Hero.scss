@@ -7,20 +7,18 @@
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 0 3rem;
-  
 
   .wrap {
     align-items: flex-end;
     flex-direction: column;
-    max-width: 1440px;
-    margin: 0 auto;
+    width: min(1440px, 100% - 4rem);
+    margin-inline: auto;
     display: flex; // Agrega flexbox para que puedas alinear el contenido correctamente
     align-items: flex-end;
     justify-content: flex-end; // Alinea el contenido hacia la derecha
     
     .content {
-      max-width: 600px;
+      max-width: 900px;
       background-color: rgba(0, 0, 0, 0.6); // Fondo semitransparente
       padding: 2rem;
       border-radius: 8px;
@@ -28,7 +26,7 @@
       text-align: right;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 8.5rem;
         margin-bottom: 1rem;
       }
 

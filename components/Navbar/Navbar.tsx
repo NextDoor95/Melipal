@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import Translation from '../ui/Translation';
+import Mobile from '../NavbarMobile/Navbarmobile'
 
 function Navbar() {
 
@@ -15,7 +16,7 @@ function Navbar() {
     { text: t('navbar.myStory'), href: "/" },
     { text: t('navbar.fragments'), href: "/" },
     { text: t('navbar.notes'), href: "/" },
-    { text: t('navbar.videos'), href: "/" },
+    { text: t('navbar.videos'), href: "/" }
   ]
 
     return (
@@ -50,10 +51,10 @@ function Navbar() {
             
           </li>
         ))}
-        <div className="corner">
-          <Translation />
-        </div>
+        <Translation />
+        <Mobile />
       </ol>
+      
     </nav>
   )
 }

@@ -1,4 +1,7 @@
 "use client"
+import Image from 'next/image';
+
+import World from '../../public/world.png';
 
 import { useTranslation } from 'react-i18next';
 
@@ -15,6 +18,11 @@ function Translation() {
       onClick={toggleLanguage}
       className="translation"
     >
+      <Image
+        src={World}
+        alt='book'
+        className='image'
+      />
       {t('navbar.language')}: {i18n.language === 'es' ? 'ES' : 'EN'}
     </button>
   )

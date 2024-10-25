@@ -12,11 +12,10 @@ function Hero() {
                     <h2>{t('hero.heroTitle')}</h2>
                     <p>{t('hero.heroDescription')}</p>
                     <p>{t('hero.heroText')}</p>
-                    
                 </div>
                 <div className='CTA'>
                     <button
-                        
+                        className='translation'
                     >
                         {t('hero.CallToAction')}
                     </button>
