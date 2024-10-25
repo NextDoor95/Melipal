@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import Translation from '../ui/Translation';
-import Mobile from '../NavbarMobile/Navbarmobile'
 
 function Navbar() {
 
@@ -52,7 +51,6 @@ function Navbar() {
           </li>
         ))}
         <Translation />
-        <Mobile />
       </ol>
       
     </nav>
