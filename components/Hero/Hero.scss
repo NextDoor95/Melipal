@@ -16,6 +16,11 @@
     display: flex; // Agrega flexbox para que puedas alinear el contenido correctamente
     align-items: flex-end;
     justify-content: flex-end; // Alinea el contenido hacia la derecha
+    @media only screen and (min-width: 320px) and (max-width: 900px) {
+      justify-content: space-between;
+      text-align: left;
+      
+    }
     
     .content {
       max-width: 900px;
@@ -24,6 +29,10 @@
       border-radius: 8px;
       color: #fff;
       text-align: right;
+
+      @media only screen and (min-width: 320px) and (max-width: 900px) {
+        text-align: left;
+      }
 
       h1 {
         font-size: 8.5rem;
@@ -35,11 +44,27 @@
         line-height: 1.5;
       }
 
-      .CTA {
-        margin-top: 30px !important;
-        background-color: #F0B84E;
-        padding: 10px 20px;
-      }
     }
+
   }
+
+}
+
+.CTA {
+    all: unset; /* Remueve estilos predeterminados */
+    background-color: rgb(31, 20, 79);
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 8px 16px; /* Espacio interno */
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.3), inset 0 -4px 4px rgba(0, 0, 0, 0.5);
+
+    @media only screen and (min-width: 320px) and (max-width: 900px) {
+      margin-top: 32px;
+      padding: 8px 24px;
+      max-height: 56px;
+    }
 }

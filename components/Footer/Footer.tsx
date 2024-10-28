@@ -15,8 +15,8 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
-  { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' },
+  { id: 1, icon: Facebook, href: 'https://facebook.com' },
+  { id: 2, icon: Instagram, href: 'https://instagram.com' },
 ];
 
 function Footer() {
@@ -24,8 +24,8 @@ function Footer() {
         <footer className="footer">
         <div className="footer-container">
             <div className="company-info">
-            <h3>Nombre de la Empresa</h3>
-            <p>Ofrecemos soluciones innovadoras para tu negocio. Nuestro compromiso es tu éxito.</p>
+            <h3>Melipal</h3>
+            <p>Un capítulo en la Guerra de Malvinas</p>
             </div>
             <nav className="footer-links">
             {footerLinks.map((link) => (
@@ -36,19 +36,18 @@ function Footer() {
             </nav>
             <div className="social-links">
             {socialLinks.map((link) => (
-                <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer">
+                <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer">
                 <Image
                     src={link.icon}
                     alt='book'
                     className="card-icon"
                 />
-                <span className="sr-only">{link.name}</span>
                 </a>
             ))}
             </div>
         </div>
         <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Nombre de la Empresa. Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Melipal | Guillermo Huircapan. Todos los derechos reservados.</p>
             <div className="sitemap">
             <a href="#">Mapa del Sitio</a>
             </div>

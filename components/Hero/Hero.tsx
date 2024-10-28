@@ -13,14 +13,13 @@ function Hero() {
                     <p>{t('hero.heroDescription')}</p>
                     <p>{t('hero.heroText')}</p>
                 </div>
-                <div className='CTA'>
+                <div>
                     <button
-                        className='translation'
+                        className='CTA'
                     >
                         {t('hero.CallToAction')}
                     </button>
                 </div>
-                
             </div>
         </section>
     )
