@@ -93,8 +93,7 @@ function Navbar() {
       </ol>
       )}
       {isMobileNavbarVisible && (
-        <div className="mobile">
-          <div className="navbar--mobile">
+          <div className="mobile">
             <Link href="/">
             historia
             </Link>
@@ -108,9 +107,6 @@ function Navbar() {
               <Translation />
             </div>
           </div>
-          
-        </div>
-        
       )}
       
     </nav>

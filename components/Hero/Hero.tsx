@@ -9,11 +9,16 @@ function Hero() {
         <section className="about">
             <div className="wrap">
                 <div className="content">
-                    <h2>{t('hero.heroTitle')}</h2>
-                    <p>{t('hero.heroDescription')}</p>
+                    <h2 className='title'>{t('hero.heroTitle')}</h2>
+                    <h3 className='subtitle'>{t('hero.heroDescription')}</h3>
                     <p>{t('hero.heroText')}</p>
                 </div>
-                <div>
+                <div className='buttons'>
+                    <button
+                        className='CTA'
+                    >
+                        {t('hero.GoTo')}
+                    </button>
                     <button
                         className='CTA'
                     >
