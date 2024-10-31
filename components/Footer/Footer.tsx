@@ -7,8 +7,10 @@ import Instagram from '../../public/footer/instagram.png';
 
 const footerLinks = [
   { name: 'Inicio', href: '/' },
-  { name: 'Sobre Nosotros', href: '/about' },
-  { name: 'Servicios', href: '/services' },
+  { name: 'Historia', href: '/about' },
+  { name: 'Fragmentos', href: '/services' },
+  { name: 'Notas', href: '/contact' },
+  { name: 'Contacto', href: '/contact' },
   { name: 'Contacto', href: '/contact' },
   { name: 'Política de Privacidad', href: '/privacy' },
   { name: 'Términos y Condiciones', href: '/terms' },
