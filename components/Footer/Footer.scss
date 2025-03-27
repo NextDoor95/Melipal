@@ -16,6 +16,7 @@ $hover-bg-color: #151b23; // Equivalente a bg-gray-800
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding-bottom: 2rem;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
@@ -73,7 +74,8 @@ $hover-bg-color: #151b23; // Equivalente a bg-gray-800
 
   .footer-bottom {
     background-color: $hover-bg-color;
-    padding: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
