@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@madzadev/audio-player": "^2.1.14",
     "framer-motion": "^11.6.0",
     "hamburger-react": "^2.5.1",
     "i18next": "^23.15.1",
@@ -16,6 +17,7 @@
     "react": "^18.3.1",
     "react-dom": "^18",
     "react-i18next": "^15.0.2",
+    "react-pageflip": "^2.0.3",
     "sass": "^1.79.3",
     "sharp": "^0.33.5"
   },

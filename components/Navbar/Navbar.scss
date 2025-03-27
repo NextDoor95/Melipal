@@ -9,8 +9,8 @@
 	justify-content: center;
 	z-index: 20;
 	background-color: rgb(0, 0, 0, 0.6);
-	border-bottom: 2px solid rgb(222, 17, 17);
-	backdrop-filter: blur(24px);
+	border-bottom: 2px solid rgb(53, 110, 58);
+	backdrop-filter: blur(8px);
 	@media only screen and (min-width: 320px) and (max-width: 900px) {
 		padding: 8px 32px;
 		justify-content: space-between;
@@ -56,9 +56,12 @@
 	padding: 10px 20px;
 	outline: none;
 	position: relative;
-	transition: color 0.3s ease;
+	transition: color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out,
+		border-radius 0.7s ease-in-out;
 	&:hover {
-	  color: #F0B84E; // Color en hover
+	  	background-color: #356E3A; // Color en hover
+		border-radius: 10px;
 	}
 }
 
@@ -68,7 +71,7 @@
 	left: 0;
 	right: 0;
 	height: 4px;
-	background-color: #F0B84E;  // Color de la barra
+	background-color: #356E3A;  // Color de la barra
 	clip-path: polygon(
 		0% 50%,    /* Punta izquierda */
 		5% 0%,     /* Ángulo superior izquierdo */

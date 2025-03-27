@@ -3,6 +3,8 @@
 @import '../components/ui/ui.scss';
 @import '../components/Cards/Cards.scss';
 @import '../components/Footer/Footer.scss';
+@import '../components/Testimonial/Testimonial.scss';
+
 
 
 :root {
@@ -29,7 +31,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
+
+
 
 * {
   box-sizing: border-box;

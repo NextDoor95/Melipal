@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import Facebook from '../../public/footer/facebook.png';
 import Instagram from '../../public/footer/instagram.png';
+import Malvinas from "../../public/cards/malvinas.png";
 
 const footerLinks = [
   { name: 'Inicio', href: '/' },
@@ -17,8 +18,8 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { id: 1, icon: Facebook, href: 'https://facebook.com' },
-  { id: 2, icon: Instagram, href: 'https://instagram.com' },
+  { id: 1, icon: Facebook, href: 'https://www.facebook.com/guille.huircapan.7' },
+  { id: 2, icon: Instagram, href: 'https://www.instagram.com/guille.huir/' },
 ];
 
 function Footer() {
@@ -49,9 +50,15 @@ function Footer() {
             </div>
         </div>
         <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Melipal | Guillermo Huircapan. Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Melipal | Guillermo Nelson Antonio Huircapan. Todos los derechos reservados.</p>
+            <Image src={Malvinas} alt="Combate" height={40} />
             <div className="sitemap">
-            <a href="#">Mapa del Sitio</a>
+            <a 
+                target="_blank" rel="noopener noreferrer"
+                href="https://www.google.com/maps/place/Pradera+del+Ganso+FIQQ+1ZZ,+Islas+Malvinas+(Falkland+Islands)/@-51.8204404,-58.9885933,13.33z/data=!4m6!3m5!1s0xbc2af00fc0651983:0xa19d8481bb24f14e!8m2!3d-51.827387!4d-58.973067!16zL20vMDNkeG5i!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+            >
+                Mapa del Sitio (Goose Green - Malvinas)
+            </a>
             </div>
         </div>
         </footer>
