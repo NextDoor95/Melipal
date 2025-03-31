@@ -6,10 +6,10 @@
         "videos": "Noticias"
     },
     "hero": {
-        "heroTitle": "Melipal",
-        "heroDescription": "Batalla en Pradera del ganso",
-        "heroText": "Memorias del Veterano Guillermo Huircapan en la guerra de Malvinas.",
-        "GoTo": "Fragmentos",
-        "CallToAction": "Obtener Libro"
+        "heroTitle": "Melipal: Honor y Coraje",
+        "heroDescription": "Batalla en Pradera del Ganso - Guillermo Huircapan",
+        "heroText": "A los 19 años participé en la Operación Rosario, cuyo objetivo era la recuperación de las Islas Malvinas el 2 de Abril de 1982. Hoy, quiero compartir mis memorias con ustedes. Te invito a descubrir en ellas el reflejo de una historia que marcó a todos los argentinos.",
+        "GoTo": "Conoce al autor",
+        "CallToAction": "Fragmentos"
     }
 }

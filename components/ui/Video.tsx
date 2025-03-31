@@ -5,12 +5,12 @@ export default function Video() {
         <section className="malvinas-video">
             <div className="container">
                 <h2 className="title">
-                Malvinas: Un Capítulo en la Historia Argentina
+                Malvinas: Todo lo que tenés que saber sobre la historia de nuestras islas
                 </h2>
                 <div className="video-wrapper">
                 <div className="video-container">
                     <iframe
-                    src="https://www.youtube.com/embed/Kz_1MSbVYT4"
+                    src="https://www.youtube.com/embed/k76-_Dl41w4?si=zhGeuNveO0xI4C-e"
                     title="Video sobre la Guerra de las Malvinas"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -18,7 +18,12 @@ export default function Video() {
                     />
                 </div>
                 <p className="video-source">
-                    Fuente: Armapedia en YouTube
+                    Fuente: 
+                    <a 
+                    className='link'
+                target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/@FelipePignaHistoria"
+            > Felipe Pigna - YouTube</a>
                 </p>
                 </div>
             </div>

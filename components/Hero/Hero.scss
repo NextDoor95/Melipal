@@ -1,12 +1,17 @@
 .about {
-  height: 130vh;
+  height: 100vh;
   background-image: 
   linear-gradient(to left, rgba(0, 0, 0, 1) 25%,rgba(0, 0, 0, 0.95) 50%, rgba(0, 0, 0, 0) 100%),
-    url('../../public/Hero-malvinas2.png');
+    url('../../public/Hero-Darwin.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  padding-left: 16rem;
+
+  .soldiers-images {
+    width: 1000px;
+  }
 
   .wrap {
     flex-direction: column;
@@ -26,7 +31,7 @@
       border-radius: 8px;
       color: #fff;
       text-align: center;
-      margin-top: -400px;
+      margin-top: -200px;
       text-shadow: 3px 3px 6px rgba(0, 0, 0);
 
       @media only screen and (min-width: 320px) and (max-width: 900px) {
@@ -57,9 +62,7 @@
 
 }
 
-.soldiers-images {
-  width: 400px;
-}
+
 
 .buttons {
   display: flex;
