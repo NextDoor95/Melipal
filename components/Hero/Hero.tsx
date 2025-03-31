@@ -11,8 +11,16 @@ import Jones from "../../public/Hero/Jones.png";
 */}
 
 const images = [
-    "/Hero/Estevez.png",
-    "/Hero/Jones.png",
+    "/Hero/1.png",
+    "/Hero/2.png",
+    "/Hero/3.png",
+    "/Hero/4.png",
+    "/Hero/5.png",
+    "/Hero/6.png",
+    "/Hero/7.png",
+    "/Hero/8.png",
+    "/Hero/9.png",
+    "/Hero/10.png",
 ];
 function Hero() {
 
@@ -21,7 +29,7 @@ function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000);
+        }, 4000);
         return () => clearInterval(interval);
     }, []);
 
@@ -34,11 +42,11 @@ function Hero() {
                     key={index}
                     src={images[index]}
                     alt="Imagen del Hero"
-                    initial={{ opacity: 0, scale: 1 }}
-                    animate={{ opacity: 0.9, scale: 1 }}
+                    initial={{ opacity: 0}}
+                    animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
-                    height={400}
+                    transition={{ duration: 2, ease: "easeInOut" }}
+                    height={500}
                     className="img"
                 />
             </div>
