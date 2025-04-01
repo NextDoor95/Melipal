@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 {/* import Image from 'next/image';
 
 import Estevez from "../../public/Hero/Estevez.png";
@@ -86,11 +87,12 @@ function Hero() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                 className='buttons'>
-                    <button
+                    <Link
                         className='CTA'
+                        href="#author"
                     >
                         {t('hero.GoTo')}
-                    </button>
+                    </Link>
                     <button
                         className='CTA'
                     >

@@ -2,26 +2,33 @@
     height: 100vh;
     background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	flex-direction: column;
+	text-align: center;
     max-width: 1440px;
-	margin: 0 auto;
+	margin: 40px auto;
     gap: 2rem;
+    scroll-margin-top: 90px; /* Ajusta este valor según tu necesidad */
+
+    h1 {
+        font-size: 3.5rem;
+    }
 
     .wrapper-bio {
+        display: flex; /* Asegura que los elementos estén en una fila */
         align-items: center;
-    justify-content: center;
-    flex-direction: row;
-.biography {
-        flex-direction: column;
-        width: min(900px, 100%);
-        margin-inline: auto;// Alinea el contenido hacia la derecha
+        justify-content: center;
+        flex-direction: row;
+        text-align: left;
+        gap: 20px; /* Espaciado entre la imagen y el texto */
+        .biography {
+            margin-inline: auto;// Alinea el contenido hacia la derecha
         @media only screen and (min-width: 320px) and (max-width: 900px) {
             justify-content: center;
             text-align: center;
         }
-
+        .image {
+            width: 500px;
+        }
     }
 
     

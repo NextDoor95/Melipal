@@ -9,7 +9,7 @@
 	justify-content: center;
 	z-index: 20;
 	background-color: rgb(0, 0, 0, 0.6);
-	border-bottom: 2px solid rgb(53, 110, 58);
+	border-bottom: 2px solid rgb(120, 175, 224);
 	backdrop-filter: blur(8px);
 	@media only screen and (min-width: 320px) and (max-width: 900px) {
 		padding: 8px 32px;
@@ -60,8 +60,9 @@
 		background-color 0.3s ease-in-out,
 		border-radius 0.7s ease-in-out;
 	&:hover {
-	  	background-color: #356E3A; // Color en hover
+	  	background-color: rgb(120, 175, 224); // Color en hover
 		border-radius: 10px;
+		color: rgb(0, 0, 0);
 	}
 }
 
@@ -71,7 +72,7 @@
 	left: 0;
 	right: 0;
 	height: 4px;
-	background-color: #356E3A;  // Color de la barra
+	background-color: rgb(120, 175, 224);  // Color de la barra
 	clip-path: polygon(
 		0% 50%,    /* Punta izquierda */
 		5% 0%,     /* Ángulo superior izquierdo */
