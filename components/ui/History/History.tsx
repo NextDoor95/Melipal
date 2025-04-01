@@ -44,7 +44,7 @@ function Story() {
                     >
                     {expandedCard ? (
                         <>
-                        <span className="button-icon">Ver menos</span>
+                        <span className="button-icon">Ver menos ↑</span>
                         <Image
                             src={ChevronUp}
                             alt='book'
@@ -53,7 +53,7 @@ function Story() {
                         </>
                     ) : (
                         <>
-                        <span className="button-icon">Ver más</span>
+                        <span className="button-icon">Ver más ↓</span>
                         <Image
                             src={ChevronDown}
                             alt='book'
