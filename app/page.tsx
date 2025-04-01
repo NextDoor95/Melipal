@@ -1,4 +1,5 @@
 
+import Author from "@/components/Author/Author";
 import Cards from "@/components/Cards/Cards";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
         <>  
             <Navbar/>
             <Hero/>
+            <Author/>
             <Testimonial/>
             <Video/>
             <Cards/>

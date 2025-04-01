@@ -1,0 +1,34 @@
+.Author {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1440px;
+	margin: 0 auto;
+    gap: 2rem;
+
+    .wrapper-bio {
+        align-items: center;
+    justify-content: center;
+    flex-direction: row;
+.biography {
+        flex-direction: column;
+        width: min(900px, 100%);
+        margin-inline: auto;// Alinea el contenido hacia la derecha
+        @media only screen and (min-width: 320px) and (max-width: 900px) {
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    }
+}

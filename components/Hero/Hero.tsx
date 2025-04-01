@@ -20,7 +20,7 @@ const images = [
     "/Hero/7.png",
     "/Hero/8.png",
     "/Hero/9.png",
-    "/Hero/10.png",
+    "/Hero/10.png"
 ];
 function Hero() {
 
