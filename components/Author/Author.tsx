@@ -1,6 +1,13 @@
 import Image from "next/image"
 
 import Guillermo from "../../public/Guillermo.png"
+import Facebook from '../../public/footer/facebook.png';
+import Instagram from '../../public/footer/instagram.png';
+
+const socialLinks = [
+    { id: 1, icon: Facebook, href: 'https://www.facebook.com/guille.huircapan.7' },
+    { id: 2, icon: Instagram, href: 'https://www.instagram.com/guille.huir/' },
+];
 
 function Author() {
     return (
@@ -16,14 +23,25 @@ La adolescencia me encontró explorando nuevos horizontes, viviendo en distintos
 <br /><br />
 La Guerra de Malvinas fue una prueba de fuego, un desafío que me puso al límite de mis fuerzas. Allí, en medio del horror y la incertidumbre, descubrí el valor del coraje, la importancia de la camaradería y la fragilidad de la vida. Regresé a casa transformado, sumado a una post-guerra dura para “los locos de Malvinas”, la cual se llevó más hermanos por suicidios que por caídos en combate. Dediqué el resto de mi vida a mantener viva la memoria de quienes quedaron, fui presidente del Centro de Veteranos de Guerra de Puerto Madryn y también Coordinador Provincial de Chubut por muchos años. Participé en marchas a la Capital Federal por reclamar derechos de los Veteranos y fuí reprimido por las Fuerzas de Seguridad Federales en el Congreso de la Nación y en las calles de Buenos Aires. Brindé charlas a escuelas de mi ciudad como en pueblos remotos y parajes de mi provincia, brindé testimonios en distintos libros, canales de televisión, radios y demás.
 <br /><br />
-Hoy escribo mi autobiografía para rendir homenaje a mis compañeros caídos y dejar un legado a nuestra nación. Mantener viva la memoria de mis hermanos de Malvinas es un compromiso que tomé como brújula en mi vida, en este contenido van a encontrar lo que vivimos los soldados de la sección BOTE del Regimiento de Infantería 25.
+Hoy escribo mi autobiografía para rendir homenaje a mis compañeros caídos y dejar un legado a nuestra nación. Mantener viva la memoria de mis hermanos de Malvinas es un compromiso que tomé como brújula en mi vida, en este contenido van a encontrar lo que viví junto a los soldados de la sección BOTE del Regimiento de Infantería 25.
 
                     </p>
                     
                 </div>
 
                 <div>
-                    <Image src={Guillermo} alt="Guillermo Huircapan" height={500} />
+                    <Image src={Guillermo} alt="Guillermo Huircapan" height={500} className="image" />
+                    <div className="social-links">
+                                {socialLinks.map((link) => (
+                                    <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer">
+                                    <Image
+                                        src={link.icon}
+                                        alt='book'
+                                        className="icon"
+                                    />
+                                    </a>
+                                ))}
+                                </div>
                 </div>
             </div>
             

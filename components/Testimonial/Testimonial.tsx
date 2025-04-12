@@ -47,8 +47,8 @@ function Testimonial() {
         className='testimonial'
         whileHover={{ scale: 1.02 }}
       > 
-        <Image src={Combate} alt="Combate" height={400} />
-        <p>Haz clic aquí</p>
+        <Image src={Combate} alt="Combate" className='combat' height={300}/>
+        <p>Haga clic aquí</p>
       </motion.div>
 
             {/* Pop-up */}
@@ -58,7 +58,7 @@ function Testimonial() {
           animate="visible"
           exit="exit"
           variants={popupVariants}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
           className='popup'
         >
           <motion.div

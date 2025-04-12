@@ -13,8 +13,9 @@ export default function Home() {
             <Navbar/>
             <Hero/>
             <Author/>
-            <Testimonial/>
             <Video/>
+            <Testimonial/>
+            
             <Cards/>
             <Footer/>
         </>

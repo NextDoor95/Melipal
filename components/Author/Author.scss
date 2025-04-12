@@ -9,8 +9,19 @@
     gap: 2rem;
     scroll-margin-top: 90px; /* Ajusta este valor según tu necesidad */
 
+    @media only screen and (min-width: 320px) and (max-width: 900px) {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
     h1 {
         font-size: 3.5rem;
+        @media only screen and (min-width: 320px) and (max-width: 900px) {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
     }
 
     .wrapper-bio {
@@ -20,22 +31,64 @@
         flex-direction: row;
         text-align: left;
         gap: 20px; /* Espaciado entre la imagen y el texto */
+        @media only screen and (min-width: 320px) and (max-width: 900px) {
+            justify-content: center;
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+        
         .biography {
             margin-inline: auto;// Alinea el contenido hacia la derecha
         @media only screen and (min-width: 320px) and (max-width: 900px) {
             justify-content: center;
             text-align: center;
         }
-        .image {
-            width: 500px;
+        
+        
+    }
+
+    .image {
+        width: 500px;
+        @media only screen and (min-width: 320px) and (max-width: 900px) {
+            width: 200px;
+            height: 200px;
         }
     }
 
-    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 2rem;
+        
+  
+        a {
+          color: $link-color;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: $hover-text-color;
+          }
+  
+          .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            transition: transform 0.3s ease-in-out; // Suaviza el efecto
+    &:hover {
+        transform: scale(1.1); // Aumenta el tamaño a 110%
+    }
+          }
+        }
+      }
 
         p {
             font-size: 1.2rem;
             line-height: 1.5;
+            @media only screen and (min-width: 320px) and (max-width: 900px) {
+                font-size: 0.8rem;
+                text-align: left;
+                padding: 0.5rem;
+            }
         }
     }
 }
